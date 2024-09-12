@@ -1,0 +1,29 @@
+<div class="user-list-container">
+    <h1>Lista de Paciente</h1>
+    @if(pacientes.length){
+        <div>
+          <ul id="userList">
+            @for( paciente of pacientes; track paciente.id ){
+                <li>
+                  {{ paciente.nome }} - {{ paciente.dataNascimento | date: "dd/MM/yyyy" }} <br>
+                  {{ paciente.email }} <br>
+                  {{ paciente.telefone }}
+                </li>
+            }
+          </ul>
+        </div>
+    }
+  </div>
+  
+  <!-- Forma "antiga" -->
+  <!-- <li *ngFor="let item of items; let i = index">
+            {{ item?.valor }} - {{ i }}
+        </li> -->
+  
+  <!-- Forma "nova" -->
+  <!-- @for (item of items; let i = $index; track i) {
+            <li>
+                {{ item?.valor }} - {{ i }}
+            </li>
+        } -->
+  

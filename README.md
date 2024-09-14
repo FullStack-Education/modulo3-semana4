@@ -11,7 +11,7 @@ Esse projeto foi desenvolvido em ![Angular](https://img.shields.io/badge/angular
 
 ## Telas do projeto :mag_right:
 
-### Tela de Home
+### Rota /home
 > Tela principal do projeto, onde é possível ver a mensagem: Seja bem-vindo a aplicação.
 
 ### Rota /aula01

@@ -25,4 +25,16 @@ export class Aula03Component {
     })
   }
 
+  getById(){
+    //Passe o mouse sobre o método getById para ver a documentação
+    this.hospApiService.getById("12").subscribe({
+      next: (lista: any)=>{
+        //Exemplo da chamada
+      },
+      error: (erro:any)=>{
+        console.error("Erro: ", erro);
+      }
+    })
+  }
+
 }
